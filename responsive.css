@@ -1,0 +1,82 @@
+/* responsive  */
+
+@media screen and (max-width:870px) {
+    .tasker-heading h1 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .tasker-content-col-1 {
+        padding-top: 0;
+    }
+    .tasker-content-col-1 #taskInput {
+        height: 150px;
+    }
+    .task-list-container ul {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .tasker-heading h1 {
+        padding-top: 40px;
+    }
+    .tasker-content {
+        padding: 40px 0 0 0;
+    }
+    .tasker-content-col-1 {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        padding: 0 15px;
+        margin: 0;
+        display: flex;
+        width: 100%;
+    }
+    .tasker-content-col-1 #taskInput {
+        flex: 1;
+        height: 60px;
+        padding: 10px;
+        border: none;
+        outline: 1px solid black;
+        resize: none;
+        display: block;
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: -0.2px;
+    }
+    .addTaskBtn {
+        width: max-content;
+        padding: 0 0 0 12px;
+        margin: 0;
+    }
+    /* col 2  */
+    .task-list-container ul {
+        padding: 28px 0;
+        width: auto;
+        min-width: 100% !important;
+        height: 300px;
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .tasker-heading h1 {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .tasker-content-col-1 #taskInput {
+        height: 40px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .addTaskBtn {
+        padding: 0 0 0 10px;
+        margin: 0;
+    }
+    .addTaskBtn p {
+        font-size: 14px;
+    }
+    .tasker-content-col-2 p {
+        font-size: 27px;
+    }
+}

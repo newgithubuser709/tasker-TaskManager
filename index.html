@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Tx_haseeb">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker | task manager</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- style Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive Css -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- script  -->
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tasker">
+            <div class="tasker-heading">
+                <h1>
+                    <i class="fa-solid fa-user-pen"></i> Tasker.
+                </h1>
+            </div>
+
+            <div class="tasker-content">
+                <div class="tasker-content-col-1">
+                    <textarea id="taskInput" placeholder="write a new task here."></textarea>
+                    <div class="addTaskBtn" onclick="addTask()">
+                        <p>Add Task</p>
+                        <i class="fa-solid fa-arrow-right-long addTaskBtn-i"></i>
+                    </div>
+                </div>
+                <div class="tasker-content-col-2">
+                    <p>your tasks here.</p>
+                    <div class="task-list-container">
+                        <ul id="taskList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
